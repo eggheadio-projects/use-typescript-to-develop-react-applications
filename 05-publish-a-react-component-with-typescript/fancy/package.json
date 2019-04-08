@@ -1,0 +1,23 @@
+{
+  "name": "fancy",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib",
+  "types": "lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basarat/typescript-react.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "npm run build -- -w"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.13",
+    "react": "^16.8.6",
+    "typescript": "^3.4.2"
+  }
+}
