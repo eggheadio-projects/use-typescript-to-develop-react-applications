@@ -10,8 +10,5 @@
     "clean:node_modules": "find . -name node_modules | xargs rm -rf",
     "latest": "yarn upgrade-interactive --latest && yarn upgrade -L"
   },
-  "devDependencies": {
-    "webpack-cli": "^3.3.0"
-  },
   "private": true
 }

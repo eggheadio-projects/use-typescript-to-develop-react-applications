@@ -1,0 +1,40 @@
+{
+    "slug": "use-typescript-to-develop-react-applications",
+    "dependencies": {
+        "react": "16.8.2",
+        "react-dom": "16.8.6",
+        "fancy ": "0.1.0",
+        "ts-loader": "5.3.3",
+        "typescript": "3.4.3",
+        "webpack": "4.29.6",
+        "webpack-dev-server": "3.3.1",
+        "webpack-cli": "3.3.0",
+        "@types/react": "16.8.13",
+        "@types/react-dom": "16.8.3"
+    },
+    "reviews": [
+        {
+            "performedOn": "2019-03-28",
+            "performedBy": 295133,
+            "scopeOfReview": "full",
+            "notes": [
+                {
+                    "type": "\"minor issue\"",
+                    "title": "Fancy import",
+                    "details": "Changed the import statement in \"Lesson 05/use\" to be \"import { Fancy } from 'fancy';\"",
+                    "lessons": [],
+                    "dependency": "@types/react-dom"
+                },
+                {
+                    "type": "minor issue",
+                    "title": "Start Script",
+                    "details": "start script had to be updated from  from: \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" to \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" ",
+                    "lessons": [
+                        "01-08"
+                    ],
+                    "dependency": "react"
+                }
+            ]
+        }
+    ]
+}
