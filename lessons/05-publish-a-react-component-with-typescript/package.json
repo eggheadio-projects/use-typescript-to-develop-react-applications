@@ -1,5 +1,5 @@
 {
-  "name": "05-publish-a-react-component-with-typescript-use",
+  "name": "05-publish-a-react-component-with-typescript",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
@@ -7,13 +7,12 @@
     "url": "https://github.com/basarat/typescript-react.git"
   },
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server -d --content-base ./public"
+    "start": "parcel src/index.html --open"
   },
   "dependencies": {
     "@types/react": "16.8.13",
     "@types/react-dom": "16.8.3",
-    "fancy": "^0.1.0",
+    "my-fancy": "^0.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "ts-loader": "5.3.3",
