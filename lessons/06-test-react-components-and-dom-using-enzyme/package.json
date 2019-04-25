@@ -7,8 +7,7 @@
     "url": "https://github.com/basarat/typescript-react.git"
   },
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server -d --content-base ./public",
+    "start": "parcel src/index.html --open",
     "test": "jest"
   },
   "dependencies": {

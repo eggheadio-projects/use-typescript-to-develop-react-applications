@@ -3,11 +3,11 @@
 
 > Creating a React Package is very similar to creating any other TypeScript Node package and we demonstrate that here.
 
-Here we have a simple bare bones `package.json` for a node module which have named 'fancy'.
+Here we have a simple bare bones `package.json` for a node module which have named 'my-fancy'.
 ***`cat package.json`***
 ```json
 {
-  "name": "fancy",
+  "name": "my-fancy",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
@@ -18,7 +18,7 @@ Here we have a simple bare bones `package.json` for a node module which have nam
 }
 ```
 
-We start off by installing `typescript` / `react` and the types for react as dev dependencies.  
+We start off by installing `typescript` / `react` and the types for react as dev dependencies.
 ```
 npm install typescript react @types/react -D
 ```
@@ -44,11 +44,11 @@ npm install typescript react @types/react -D
 
 * Next we simply create our root `src/index.tsx` file.
 * Within the file we bring in React.
-* Next we export a simple `Fancy` component that takes a text prop and renders it into an h1 tag.
+* Next we export a simple `my-fancy` component that takes a text prop and renders it into an h1 tag.
 ```js
 import * as React from 'react';
 
-export const Fancy: React.SFC<{ text: string }>
+export const my-fancy: React.SFC<{ text: string }>
   = (props) => <h1>{props.text}</h1>;
 
 ```
@@ -84,21 +84,21 @@ npm run build
 npm link
 ```
 
-* Now lets jump back to our good old hello world react application and use this fancy package.
+* Now lets jump back to our good old hello world react application and use this my-fancy package.
 ```
 cd ../use
 ```
-* If we had published our package to npm we could use it with `npm install fancy` but since we only linked it locally we can bring it in by running `npm link fancy`. This `npm link` workflow is also a good tool to be aware of for local testing of packages before deploying them to npm.
+* If we had published our package to npm we could use it with `npm install my-fancy` but since we only linked it locally we can bring it in by running `npm link my-fancy`. This `npm link` workflow is also a good tool to be aware of for local testing of packages before deploying them to npm.
 ```
-npm link fancy
+npm link my-fancy
 ```
 
 ***alm -o && Run the demo***
 * We start with a simple basic TypeScript hello world react app.
-* We now import the Fancy component into our application. Ofcourse since the Fancy package was written with TypeScript we get nice autocomplete, error checking and all the other benefits we demonstarted in the first lesson.
+* We now import the my-fancy component into our application. Ofcourse since the my-fancy package was written with TypeScript we get nice autocomplete, error checking and all the other benefits we demonstarted in the first lesson.
 
 ```js
-import { Fancy } from 'fancy';
+import { Fancy } from 'my-fancy';
 
 ReactDOM.render(
   <Fancy text="Hello world"/>,
@@ -106,4 +106,4 @@ ReactDOM.render(
 );
 ```
 
-* As you can see our fancy component works as expected.
+* As you can see our my-fancy component works as expected.
