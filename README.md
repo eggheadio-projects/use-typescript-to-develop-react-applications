@@ -2,6 +2,10 @@
 
 Docs / Code to an accompanying video course on how to setup a react project with TypeScript.
 
+## Lesson Notes
+
+For example 05, `Publish a React component with TypeScript`, you must run `yarn link` in the `my-fancy` folder and `yarn link "my-fancy"` in `05-publish-a-react-component-with-typescript` to properly run the example
+
 
 ## Lessons
 

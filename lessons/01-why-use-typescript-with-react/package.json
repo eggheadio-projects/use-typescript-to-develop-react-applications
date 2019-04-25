@@ -7,8 +7,7 @@
     "url": "https://github.com/basarat/typescript-react.git"
   },
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server -d --content-base ./public"
+    "start": "parcel src/index.html --open"
   },
   "dependencies": {
     "@types/react": "16.8.8",
@@ -16,12 +15,10 @@
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "ts-loader": "5.3.3",
-    "typescript": "3.3.3333",
-    "webpack": "4.29.6",
-    "webpack-dev-server": "3.2.1"
+    "typescript": "3.3.3333"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.0"
+    "parcel-bundler": "^1.12.3"
   },
   "private": true
 }

@@ -7,8 +7,7 @@
     "url": "https://github.com/basarat/typescript-react.git"
   },
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server -d --content-base ./public",
+    "start": "parcel src/index.html --open",
     "test": "jest"
   },
   "dependencies": {
@@ -17,9 +16,7 @@
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "ts-loader": "5.3.3",
-    "typescript": "3.3.4000",
-    "webpack": "4.29.6",
-    "webpack-dev-server": "3.2.1"
+    "typescript": "3.3.4000"
   },
   "devDependencies": {
     "@types/enzyme": "3.9.1",
@@ -27,8 +24,8 @@
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.11.2",
     "jest": "24.5.0",
-    "ts-jest": "24.0.0",
-    "webpack-cli": "^3.3.0"
+    "parcel-bundler": "^1.12.3",
+    "ts-jest": "24.0.0"
   },
   "private": true
 }
