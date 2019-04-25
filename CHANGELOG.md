@@ -1,23 +1,58 @@
 # Changelog
 
-All notable changes to “Use TypeScript to develop React Applications” will be documented in this file. 
+All notable changes to this project will be documented in this file.
 
-## 1.0.0
-- The instructor's github repo had all the lesson code from the beginning of each lesson rather than the end. 
-- `webpack-cli` now has to be added as a devDependency. 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## 1.0.0 - YYYY-MM-DD
+
+## 1.1.0 - 2019-04-25
+
+### Added
+- `parcel-bundler#^1.12.3`
+- Made this repo a yarn workspace
+
+### Changed
+- Updated repo to `1.1.0`
+- Updated start script to `parcel src/index.html --open`
+- Updated .JSON output file
+
+### Removed
+- `webpack`
+- `webpack-cli`
+- `webpack-dev-server`
+
+## 1.0.0 - 2019-04-24
+- The instructor's github repo had all the lesson code from the beginning of each lesson rather than the end.
+- `webpack-cli` now has to be added as a devDependency.
 
 ### Added
 
 - This file.
-- .JSON output file 
-- A package.json file in order to convert the project to easily download as a yarn workspace. 
-- Webpack.config.js file for lesson 01. 
-- A lessons folder for all the individual lesson code. 
+- .JSON output file
+- A package.json file in order to convert the project to easily download as a yarn workspace.
+- Webpack.config.js file for lesson 01.
+- A lessons folder for all the individual lesson code.
 
 ### Changed
 
-- Renamed all folder titles on git to accurately reflect the lesson titles. 
-- All lesson folder code to be the code shown at the end of each video, rather than at the beginning. 
+- Renamed all folder titles on git to accurately reflect the lesson titles.
+- All lesson folder code to be the code shown at the end of each video, rather than at the beginning.
 - Update `@types/react#16.4.2->16.8.8`.
 - Update `@types/react-dom#16.0.6->16.8.2`.
 - Update `react#16.4.1->16.8.4`.
@@ -39,12 +74,7 @@ All notable changes to “Use TypeScript to develop React Applications” will b
     ```json
             "scripts": {
                 "build": "webpack -p",
-                "start": "webpack-dev-server -d --content-base ./public" 
+                "start": "webpack-dev-server -d --content-base ./public"
     ```
 - Sets "moduleResolution": "node" in tsconfig to fix `error TS2307: Cannot find module`
 - Changed the import statement in lesson 5, "use" to read `import { Fancy } from 'fancy';`
-
-### Removed
--
-
- 

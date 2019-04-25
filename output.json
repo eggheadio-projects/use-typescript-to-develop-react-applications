@@ -6,13 +6,24 @@
         "fancy ": "0.1.0",
         "ts-loader": "5.3.3",
         "typescript": "3.4.3",
-        "webpack": "4.29.6",
-        "webpack-dev-server": "3.3.1",
-        "webpack-cli": "3.3.0",
+        "parcel-bundler": "^1.12.3",
         "@types/react": "16.8.13",
         "@types/react-dom": "16.8.3"
     },
     "reviews": [
+          {
+            "performedOn": "2019-04-25",
+            "performedBy": 71775,
+            "scopeOfReview": "full",
+            "notes": [
+                {
+                    "type": "minor issue",
+                    "title": "Update `start` Script to use parcel",
+                    "details": "start script had to be updated from  from: \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server ./webpack.config.js --content-base ./public\" to \"scripts\": { \"start\": \"parcel src/index.html --open\" ",
+                    "dependency": "parcel-bundler"
+                }
+            ]
+        },
         {
             "performedOn": "2019-03-28",
             "performedBy": 295133,
@@ -27,8 +38,8 @@
                 },
                 {
                     "type": "minor issue",
-                    "title": "Start Script",
-                    "details": "start script had to be updated from  from: \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" to \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" ",
+                    "title": "Update Script",
+                    "details": "start script had to be updated from  from: \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server ./webpack.config.js --content-base ./public\" to \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" ",
                     "lessons": [
                         "01-08"
                     ],
