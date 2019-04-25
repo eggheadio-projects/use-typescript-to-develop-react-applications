@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "03-create-stateless-react-components-using-typescript",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
@@ -19,5 +19,6 @@
     "typescript": "2.5.3",
     "webpack": "3.8.1",
     "webpack-dev-server": "2.9.3"
-  }
+  },
+  "private": true
 }
