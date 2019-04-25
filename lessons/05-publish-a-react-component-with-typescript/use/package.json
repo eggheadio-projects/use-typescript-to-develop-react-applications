@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "05-publish-a-react-component-with-typescript-use",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
@@ -23,5 +23,6 @@
   },
   "devDependencies": {
     "webpack-cli": "^3.3.0"
-  }
+  },
+  "private": true
 }
