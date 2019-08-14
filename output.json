@@ -1,0 +1,51 @@
+{
+    "slug": "use-typescript-to-develop-react-applications",
+    "dependencies": {
+        "react": "16.8.2",
+        "react-dom": "16.8.6",
+        "fancy ": "0.1.0",
+        "ts-loader": "5.3.3",
+        "typescript": "3.4.3",
+        "parcel-bundler": "^1.12.3",
+        "@types/react": "16.8.13",
+        "@types/react-dom": "16.8.3"
+    },
+    "reviews": [
+          {
+            "performedOn": "2019-04-25",
+            "performedBy": 71775,
+            "scopeOfReview": "full",
+            "notes": [
+                {
+                    "type": "minor issue",
+                    "title": "Update `start` Script to use parcel",
+                    "details": "start script had to be updated from  from: \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server ./webpack.config.js --content-base ./public\" to \"scripts\": { \"start\": \"parcel src/index.html --open\" ",
+                    "dependency": "parcel-bundler"
+                }
+            ]
+        },
+        {
+            "performedOn": "2019-03-28",
+            "performedBy": 295133,
+            "scopeOfReview": "full",
+            "notes": [
+                {
+                    "type": "\"minor issue\"",
+                    "title": "Fancy import",
+                    "details": "Changed the import statement in \"Lesson 05/use\" to be \"import { Fancy } from 'fancy';\"",
+                    "lessons": [],
+                    "dependency": "@types/react-dom"
+                },
+                {
+                    "type": "minor issue",
+                    "title": "Update Script",
+                    "details": "start script had to be updated from  from: \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server ./webpack.config.js --content-base ./public\" to \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" ",
+                    "lessons": [
+                        "01-08"
+                    ],
+                    "dependency": "react"
+                }
+            ]
+        }
+    ]
+}
